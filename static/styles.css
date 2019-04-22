@@ -1,0 +1,67 @@
+body {
+    font-size: 110%;
+    background-color:lightskyblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+    width: 35%;
+}
+
+/* the entire form */
+
+form {
+    background-color: lightskyblue;
+    color: black; 
+    margin: auto;
+    position: relative;
+}
+
+/* makes the boxes shift to next line */
+
+.form_label {
+    display: block;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1rem;
+    padding-left: 0.5rem;
+}
+
+/* submit button */
+
+input {
+    width: 95%;
+    margin: auto;
+    padding: 0.6rem;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+/* error messages */
+
+.error {
+    color: crimson;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    line-height: 1rem;
+}
+
+.error:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
+/* submit button */
+
+.submit { 
+    width: auto;
+    background-color: blueviolet;
+    border: 0;
+    color: #FFFFFF; 
+    text-transform: uppercase;
+}
