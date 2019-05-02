@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    <h2>Individual Blog Posts</h2>
+    <h2>{{user}}&#39;s Blog Posts</h2>
 
     <div>
         {% for blog in posts %}
@@ -13,5 +13,4 @@
         {% endfor %}
     </div>
     
-
 {% endblock %}

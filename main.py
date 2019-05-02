@@ -138,7 +138,8 @@ def display_blog():
     user_id = request.args.get('owner_id')
     if (user_id):
         single_user_posts = Blog.query.filter_by(owner_id=user_id)
-        return render_template('singleUser.html', posts = single_user_posts)
+        return render_template('singleUser.html', posts = single_user_posts,
+             user = single_user_posts[0].owner.username)
     else:
         all_blog_posts = Blog.query.all()
         return render_template('blog.html', posts=all_blog_posts)
